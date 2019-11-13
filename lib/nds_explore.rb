@@ -8,8 +8,11 @@ def pretty_print_nds(nds)
 end
 
 def print_first_directors_movie_titles
-  row_index = 0
-  while row_index < directors_database.length do
-    puts "#{row_index}"
+  spielburg_films = directors_database[0][:movies]
+  index = 0
+  while index < spielburg_films.length do
+    titles = spielburg_films[index][titles]
+    puts titles 
+    index += 1
   end
 end
