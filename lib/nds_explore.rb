@@ -12,7 +12,7 @@ def print_first_directors_movie_titles
   index = 0
   while index < spielburg_films.length do
     titles = spielburg_films[index][titles]
-    puts \ntitles
+    puts titles\n
     index += 1
   end
 end
